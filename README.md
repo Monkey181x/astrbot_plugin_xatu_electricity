@@ -146,21 +146,7 @@ XATU_X_TOKEN=当前有效的Token
 
 历史记录只保留最近 30 天。
 
-## 开发与测试
-
-```bash
-python -m pip install -r requirements.txt
-python -m unittest discover -v
-```
-
-可选代码检查：
-
-```bash
-ruff check main.py xatu_electricity tests
-ruff format --check main.py xatu_electricity tests
-```
-
-项目结构：
+## 项目结构
 
 ```text
 .
@@ -173,7 +159,6 @@ ruff format --check main.py xatu_electricity tests
 │   ├── client.py
 │   ├── history.py
 │   └── ...
-└── tests/
 ```
 
 
@@ -182,4 +167,3 @@ ruff format --check main.py xatu_electricity tests
 - [AstrBot 插件开发指南](https://docs.astrbot.app/dev/star/plugin-new.html)
 - [AstrBot 主动消息](https://docs.astrbot.app/dev/star/guides/send-message.html)
 - [AstrBot 插件存储](https://docs.astrbot.app/dev/star/guides/storage.html)
-
