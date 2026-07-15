@@ -1,0 +1,80 @@
+{
+  "username": {
+    "type": "string",
+    "description": "统一身份认证账号",
+    "hint": "由 AstrBot 保存到插件配置文件中。",
+    "default": ""
+  },
+  "password": {
+    "type": "string",
+    "description": "统一身份认证密码",
+    "hint": "AstrBot 当前没有专用密码配置类型，请限制服务器配置文件的读取权限。",
+    "obvious_hint": true,
+    "default": ""
+  },
+  "x_token": {
+    "type": "string",
+    "description": "当前 X-Token",
+    "hint": "由插件自动保存和更新，也可手动填入浏览器当前令牌。请勿向他人泄露。",
+    "obvious_hint": true,
+    "default": ""
+  },
+  "initial_token_env": {
+    "type": "string",
+    "description": "可选初始 X-Token 环境变量名",
+    "hint": "仅用于首次启动时导入现有令牌；后续由插件自动续签。",
+    "default": "XATU_X_TOKEN"
+  },
+  "project_id": {
+    "type": "string",
+    "description": "电费项目 ID",
+    "default": "88827410e9214c81a886f6e1dcb20dcc"
+  },
+  "area_id": {
+    "type": "string",
+    "description": "校区区域 ID",
+    "default": "1"
+  },
+  "request_timeout_seconds": {
+    "type": "float",
+    "description": "网络请求超时时间（秒）",
+    "default": 20.0
+  },
+  "verify_tls": {
+    "type": "bool",
+    "description": "验证 HTTPS 证书",
+    "default": true
+  },
+  "prewarm_auth": {
+    "type": "bool",
+    "description": "插件启动且没有已保存令牌时立即获取令牌",
+    "hint": "已有令牌时不会提前验证；关闭时仅在查询发现没有令牌时认证。",
+    "default": false
+  },
+  "alert_check_hour": {
+    "type": "int",
+    "description": "每日电费预警查询小时（北京时间）",
+    "hint": "使用 0-23 的整数，默认每天 13:00 查询预警列表。",
+    "default": 13
+  },
+  "winter_vacation_start": {
+    "type": "string",
+    "description": "寒假开始日期（月-日）",
+    "default": "02-01"
+  },
+  "winter_vacation_end": {
+    "type": "string",
+    "description": "寒假结束日期（月-日）",
+    "default": "03-01"
+  },
+  "summer_vacation_start": {
+    "type": "string",
+    "description": "暑假开始日期（月-日）",
+    "default": "07-10"
+  },
+  "summer_vacation_end": {
+    "type": "string",
+    "description": "暑假结束日期（月-日）",
+    "default": "08-31"
+  }
+}
